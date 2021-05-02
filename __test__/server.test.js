@@ -19,6 +19,6 @@ describe('Testing Server Module', ()=> {
     it('handle home route', async ()=> {
         let response = await serverRequest.get('/');
         expect(response.status).toEqual(200);
-        expect(response.text).toEqual('Hello from Server home route');
+        expect(response.text).toEqual('Hello from mohammad');
     });
 });

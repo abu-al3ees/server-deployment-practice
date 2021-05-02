@@ -9,13 +9,13 @@ const app = express();
 
 // add routes
 app.get('/', (req, res)=> {
-    res.status(200).send('Hello from Server home route');
+    res.status(200).send('Hello from mohammad');
 });
 
 app.get('/info', (req, res)=> {
     res.status(200).json({
-        name: "Mohammad",
-        age: 29
+        name: "Mohammad ",
+        age: 23
     });
 });
 
@@ -41,12 +41,3 @@ module.exports = {
     app: app,
     start: start
 }
-
-// // Modularity 
-// let obj = {
-//     app: app,
-//     start: function start(port) {
-//         app.listen(port, ()=> console.log(`App is Runnning on ${port}`));
-//     }
-// }
-// module.exports = obj;
